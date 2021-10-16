@@ -29,3 +29,16 @@
     }
   }
 }
+
+@media (max-width: 600px) {
+  .portfolioSite h1 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .portfolioSite .bigGallery img {
+    height: 100%;
+    width: 100%;
+  }
+}

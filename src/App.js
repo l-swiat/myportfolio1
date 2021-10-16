@@ -222,7 +222,7 @@ function App(props) {
         </Route>
         <Route exact path="/malachite">
           <DebugHistory />
-          <div className="Ap site">
+          <div className="App site">
             <div className="mainContentField">
               <MenuComponent />
               <Malachite />
