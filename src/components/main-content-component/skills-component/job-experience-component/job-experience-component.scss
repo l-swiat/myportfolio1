@@ -29,3 +29,9 @@
     }
   }
 }
+
+@media (max-width: 1000px) {
+  .job {
+    flex-direction: column-reverse;
+  }
+}

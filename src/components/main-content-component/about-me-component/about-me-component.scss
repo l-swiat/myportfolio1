@@ -2,3 +2,8 @@
 .aboutMe {
   @include content;
 }
+@media (max-width: 1000px) {
+  .aboutMe {
+    padding: 0;
+  }
+}

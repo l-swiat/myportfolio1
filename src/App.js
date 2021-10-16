@@ -222,7 +222,7 @@ function App(props) {
         </Route>
         <Route exact path="/malachite">
           <DebugHistory />
-          <div className="App">
+          <div className="Ap site">
             <div className="mainContentField">
               <MenuComponent />
               <Malachite />
@@ -231,7 +231,7 @@ function App(props) {
         </Route>
         <Route exact path="/baneryinstagramowe">
           <DebugHistory />
-          <div className="App">
+          <div className="App site">
             <div className="mainContentField">
               <MenuComponent />
               <Banners />

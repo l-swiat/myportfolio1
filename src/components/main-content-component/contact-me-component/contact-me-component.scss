@@ -21,3 +21,15 @@
     }
   }
 }
+@media (max-width: 1000px) {
+  .contact {
+    padding: 0;
+    .contactData {
+      .item {
+        svg {
+          display: none;
+        }
+      }
+    }
+  }
+}
