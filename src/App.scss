@@ -6,6 +6,9 @@ body {
   font-family: $main-font;
   margin: 0;
   padding: 0;
+  .notpage {
+    padding: 30px;
+  }
   p {
     line-height: 24px;
     font-size: 18px;

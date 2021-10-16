@@ -22,9 +22,14 @@ import Logos from "./components/sites/graphics/Logos";
 import Catalog from "./components/sites/graphics/Catalog";
 import Visualisation from "./components/sites/graphics/Visualisation";
 
+import ContactMe from "./components/main-content-component/contact-me-component/contact-me-component";
+
+import SkillsComponent from "./components/main-content-component/skills-component/skills-component";
 import graphics from "./graphics";
 import GraphicComponent from "./components/main-content-component/portfolio-component/portfolio-content-component/content-component/graphic-component/graphic-component";
 import WebComponent from "./components/main-content-component/portfolio-component/portfolio-content-component/content-component/web-component/web-component";
+import NotPage from "./NotPage";
+import AboutMeComponent from "./components/main-content-component/about-me-component/about-me-component";
 const reducer = (state, action) => {
   switch (action.type) {
     case "aboutLink":
@@ -175,7 +180,7 @@ function App(props) {
             </div>
           </div>
         </Route>
-        <Route exact path="/virtal">
+        <Route path="/virtal">
           <DebugHistory />
           <div className="App site">
             <div className="mainContentField">
@@ -184,7 +189,7 @@ function App(props) {
             </div>
           </div>
         </Route>
-        <Route exact path="/wizualnestudio">
+        <Route path="/wizualnestudio">
           <DebugHistory />
           <div className="App site">
             <div className="mainContentField">
@@ -193,7 +198,7 @@ function App(props) {
             </div>
           </div>
         </Route>
-        <Route exact path="/swiatchrominska">
+        <Route path="/swiatchrominska">
           <DebugHistory />
           <div className="App site">
             <div className="mainContentField">
@@ -202,7 +207,7 @@ function App(props) {
             </div>
           </div>
         </Route>
-        <Route exact path="/unipack">
+        <Route path="/unipack">
           <DebugHistory />
           <div className="App site">
             <div className="mainContentField">
@@ -211,7 +216,7 @@ function App(props) {
             </div>
           </div>
         </Route>
-        <Route exact path="/bestbiuro">
+        <Route path="/bestbiuro">
           <DebugHistory />
           <div className="App site">
             <div className="mainContentField">
@@ -220,7 +225,7 @@ function App(props) {
             </div>
           </div>
         </Route>
-        <Route exact path="/malachite">
+        <Route path="/malachite">
           <DebugHistory />
           <div className="App site">
             <div className="mainContentField">
@@ -229,7 +234,7 @@ function App(props) {
             </div>
           </div>
         </Route>
-        <Route exact path="/baneryinstagramowe">
+        <Route path="/baneryinstagramowe">
           <DebugHistory />
           <div className="App site">
             <div className="mainContentField">
@@ -238,7 +243,7 @@ function App(props) {
             </div>
           </div>
         </Route>
-        <Route exact path="/gazetkakwartalna">
+        <Route path="/gazetkakwartalna">
           <DebugHistory />
           <div className="App site">
             <div className="mainContentField">
@@ -247,7 +252,7 @@ function App(props) {
             </div>
           </div>
         </Route>
-        <Route exact path="/projektopakowan">
+        <Route path="/projektopakowan">
           <DebugHistory />
           <div className="App site">
             <div className="mainContentField">
@@ -256,7 +261,7 @@ function App(props) {
             </div>
           </div>
         </Route>
-        <Route exact path="/logotypy">
+        <Route path="/logotypy">
           <DebugHistory />
           <div className="App site">
             <div className="mainContentField">
@@ -265,7 +270,7 @@ function App(props) {
             </div>
           </div>
         </Route>
-        <Route exact path="/broszury">
+        <Route path="/broszury">
           <DebugHistory />
           <div className="App site">
             <div className="mainContentField">
@@ -274,7 +279,7 @@ function App(props) {
             </div>
           </div>
         </Route>
-        <Route exact path="/wizualizacje3d">
+        <Route path="/wizualizacje3d">
           <DebugHistory />
           <div className="App site">
             <div className="mainContentField">
@@ -283,7 +288,7 @@ function App(props) {
             </div>
           </div>
         </Route>
-        <Route path="/">
+        <Route path="/contact">
           <DebugHistory />
           <div className="App desktopApp">
             <div className="mainContentField">
@@ -295,12 +300,7 @@ function App(props) {
                 activeLink={activeLink}
               />
               <BigImageComponent />
-              <MainContentComponent
-                skills={skills}
-                jobs={jobs}
-                websites={websites}
-                graphics={graphics}
-              />
+              <ContactMe />
             </div>
           </div>
           <div className="App mobileApp">
@@ -316,14 +316,86 @@ function App(props) {
                 <div>
                   {" "}
                   <BigImageComponent />
-                  <MainContentComponent
-                    skills={skills}
-                    jobs={jobs}
-                    websites={websites}
-                    graphics={graphics}
-                  />
+                  <ContactMe />
                 </div>
               </div>
+            </div>
+          </div>
+        </Route>
+        <Route path="/skills">
+          <DebugHistory />
+          <div className="App desktopApp">
+            <div className="mainContentField">
+              <MenuComponent
+                aboutLink={state.aboutLink}
+                skillsLink={state.skillsLink}
+                portfolioLink={state.portfolioLink}
+                contactLink={state.contactLink}
+                activeLink={activeLink}
+              />
+              <BigImageComponent />
+              <SkillsComponent jobs={jobs} skills={skills} />
+            </div>
+          </div>
+          <div className="App mobileApp">
+            <div className="mainContentField">
+              <div className="mobile-row">
+                <MenuComponent
+                  aboutLink={state.aboutLink}
+                  skillsLink={state.skillsLink}
+                  portfolioLink={state.portfolioLink}
+                  contactLink={state.contactLink}
+                  activeLink={activeLink}
+                />
+                <div>
+                  {" "}
+                  <BigImageComponent />
+                  <SkillsComponent jobs={jobs} skills={skills} />
+                </div>
+              </div>
+            </div>
+          </div>
+        </Route>{" "}
+        <Route exact path="/">
+          <DebugHistory />
+          <div className="App desktopApp">
+            <div className="mainContentField">
+              <MenuComponent
+                aboutLink={state.aboutLink}
+                skillsLink={state.skillsLink}
+                portfolioLink={state.portfolioLink}
+                contactLink={state.contactLink}
+                activeLink={activeLink}
+              />
+              <BigImageComponent />
+              <AboutMeComponent />
+            </div>
+          </div>
+          <div className="App mobileApp">
+            <div className="mainContentField">
+              <div className="mobile-row">
+                <MenuComponent
+                  aboutLink={state.aboutLink}
+                  skillsLink={state.skillsLink}
+                  portfolioLink={state.portfolioLink}
+                  contactLink={state.contactLink}
+                  activeLink={activeLink}
+                />
+                <div>
+                  {" "}
+                  <BigImageComponent />
+                  <AboutMeComponent />
+                </div>
+              </div>
+            </div>
+          </div>
+        </Route>
+        <Route>
+          <DebugHistory />
+          <div className="App site">
+            <div className="mainContentField">
+              <MenuComponent />
+              <NotPage />
             </div>
           </div>
         </Route>
