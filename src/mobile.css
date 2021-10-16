@@ -1,0 +1,26 @@
+@media (max-width: 1300px) {
+  .App .mainContentField {
+    width: 95%;
+  }
+}
+@media (max-width: 1000px) {
+  .desktopApp {
+    display: none;
+  }
+  .mobileApp {
+    display: flex;
+    padding-top: 20px;
+  }
+  .App .mainContentField {
+    flex-direction: column;
+    height: 100vh;
+    background: none;
+    box-shadow: none;
+  }
+  .site .mainContentField {
+    flex-direction: row;
+  }
+  .mobileApp .mobile-row {
+    display: flex;
+  }
+}

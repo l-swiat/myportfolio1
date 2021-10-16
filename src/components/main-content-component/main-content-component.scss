@@ -1,0 +1,15 @@
+@import "../../variables.scss";
+.mainContent {
+  width: 64%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+@media (max-width: 1000px) {
+  .mobileApp .mainContent {
+    width: 100%;
+    height: auto;
+  }
+}

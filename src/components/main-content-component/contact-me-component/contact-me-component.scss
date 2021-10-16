@@ -1,0 +1,23 @@
+@import "../../../variables.scss";
+
+.contact {
+  @include content;
+  .contactData {
+    padding-top: 50px;
+    .item {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      padding-bottom: 20px;
+      svg {
+        fill: $teal-color;
+        width: 60px;
+        height: 60px;
+      }
+      span {
+        font-size: 22px;
+        padding-left: 10px;
+      }
+    }
+  }
+}

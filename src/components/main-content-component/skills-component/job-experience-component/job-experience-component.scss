@@ -1,0 +1,31 @@
+@import "../../../../variables.scss";
+.jobs {
+  .job {
+    border: 1px solid white;
+    border-radius: 25px;
+    background-color: #244350;
+    margin: 15px 0;
+    padding: 20px;
+    display: flex;
+    .left {
+      flex-basis: 70%;
+      h3 {
+        font-size: 25px;
+      }
+      i {
+        font-size: 13px;
+        color: rgba(245, 245, 245, 0.61);
+      }
+    }
+    .right {
+      flex-basis: 30%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 150px;
+        object-fit: contain;
+      }
+    }
+  }
+}

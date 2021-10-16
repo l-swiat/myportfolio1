@@ -1,0 +1,47 @@
+@import "./variables.scss";
+
+body {
+  background-color: $bg-color;
+  color: white;
+  font-family: $main-font;
+  margin: 0;
+  padding: 0;
+  p {
+    line-height: 24px;
+    font-size: 18px;
+  }
+  h1 {
+    font-size: 55px;
+  }
+  .teal {
+    color: $teal-color;
+  }
+
+  a {
+    color: $teal-color;
+    text-decoration: none;
+    transition: 0.3s;
+    &:hover {
+      color: orangered;
+    }
+  }
+}
+.App {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .mainContentField {
+    background-color: $bg-lighter-color;
+    height: 80vh;
+    width: 80%;
+    -webkit-box-shadow: 10px 10px 60px 0px rgba(255, 255, 255, 0.1);
+    -moz-box-shadow: 10px 10px 60px 0px rgba(255, 255, 255, 0.1);
+    box-shadow: 10px 10px 60px 0px rgba(255, 255, 255, 0.1);
+    display: flex;
+    position: relative;
+  }
+}
+.mobileApp {
+  display: none;
+}

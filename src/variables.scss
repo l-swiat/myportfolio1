@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+/*colors*/
+$bg-color: #202a2e;
+$bg-lighter-color: #1d3741;
+$orange-color: #e76f51;
+$teal-color: #37cebc;
+/*fonts*/
+$main-font: "Roboto Condensed", sans-serif;
+$oswald-font: "Oswald", sans-serif;
+
+/*padding*/
+
+$main-padding: 30px;
+
+@mixin content {
+  padding: $main-padding;
+  width: 92%;
+  height: 100%;
+  overflow-y: scroll;
+}
+@mixin site {
+  padding: $main-padding;
+  width: 92%;
+  height: auto;
+  overflow-y: scroll;
+}
+/*scroll*/
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1b2;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $teal-color;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: orangered;
+}
+
+@media (max-width: 1000px) {
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}

@@ -1,0 +1,19 @@
+@import "../../../../variables.scss";
+
+.sectors {
+  margin-top: 100px;
+  .sectorsItems {
+    display: flex;
+    flex-wrap: wrap;
+    .item {
+      flex-basis: 50%;
+      margin: 10px 0;
+
+      svg {
+        fill: $teal-color;
+        width: 60px;
+        height: 60px;
+      }
+    }
+  }
+}

@@ -1,0 +1,7 @@
+@import "../../../variables.scss";
+
+.skills {
+  @include content;
+  display: flex;
+  flex-direction: column;
+}
