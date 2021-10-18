@@ -24,7 +24,7 @@ const jobs = [
     id: 3,
     name: "Wizualne Bydgoszcz",
     workplace: "CEO",
-    date: "05/2018 - 04/2021",
+    date: "01/2020 - obecnie",
     duties: "Tworzenie stron internetowych. Tworzenie grafik.",
     image: wizualne,
   },

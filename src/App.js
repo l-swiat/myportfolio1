@@ -1,6 +1,6 @@
 import "./App.scss";
 import "./mobile.css";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { HashRouter as Router, Switch, Route } from "react-router-dom";
 import BigImageComponent from "./components/big-image-component/big-image-component";
 import MenuComponent from "./components/menu-component/menu-component";
 import MainContentComponent from "./components/main-content-component/main-content-component";
